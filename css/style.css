@@ -35,8 +35,11 @@ a {
 }
 
 .home {
-    background: url("../img/homebg.png") no-repeat;
+    position: fixed;
+    width: 100%;
+    background: url("../img/homebg.png") no-repeat fixed center;
     background-size: cover;
+    top: 0;
 }
 
 .header {
@@ -45,7 +48,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header .container {
@@ -123,6 +126,7 @@ a {
     color: #ffffff;
     padding: 380px 0 240px;
     text-align: center;
+    z-index: -1;
 }
 .home__title {
     font-size: 35px;
@@ -171,7 +175,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 90px;
+    position: relative;
+    z-index: 2;
+    margin-top: 54%;
 }
 
 .option__item {
@@ -202,7 +208,8 @@ a {
 }
 
 .service {
-    margin-bottom: 90px;
+    padding: 90px 0;
+    background: #FFFFFF;
 }
 
 .tlt {
@@ -461,6 +468,7 @@ a {
 
 .news {
     padding: 82px 0 132px;
+    background: #FFFFFF;
 }
 
 .news__cards {
@@ -672,6 +680,7 @@ a {
 /*_____________________________________________________________*/
 .gallery {
     padding: 108px 0;
+    background: #FFFFFF;
 }
 
 .masonry-container {
